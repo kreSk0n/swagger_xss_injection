@@ -1,0 +1,54 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "<img src=x onerror=alert('version')>",
+    "title": "<svg/onload=alert('title')>",
+    "description": "<script>alert('description')</script>"
+  },
+  "host": "example.com",
+  "basePath": "/api",
+  "schemes": ["https"],
+  "paths": {
+    "/<img src=x onerror=alert('path-key')>": {
+      "get": {
+        "summary": "<img src=x onerror=alert('summary')>",
+        "description": "<svg/onload=alert('desc-path')>",
+        "responses": {
+          "200": {
+            "description": "<script>alert('200')</script>"
+          }
+        }
+      }
+    },
+    "/normalpath": {
+      "get": {
+        "summary": "Regular summary",
+        "description": "Normal path for fallback test",
+        "parameters": [
+          {
+            "name": "test",
+            "in": "query",
+            "description": "<img src=x onerror=alert('param')>",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "<iframe src=javascript:alert('iframe')>"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "<img src=x onerror=alert('externalDocs')>",
+    "url": "https://example.com"
+  },
+  "tags": [
+    {
+      "name": "xss",
+      "description": "<svg/onload=alert('tag')>"
+    }
+  ]
+}

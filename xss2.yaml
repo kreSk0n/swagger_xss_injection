@@ -1,0 +1,48 @@
+swagger: "2.0"
+
+info:
+  title: Classic API Resource Documentation
+  version: production
+  description: |
+    </textarea>
+    <img src=x onerror=alert('XSS-info-description')>
+    <textarea>
+
+basePath: /JSSResource/
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  "/<img src=x onerror=alert('XSS-path')>":
+    get:
+      summary: "</textarea><img src=x onerror=alert('XSS-summary')>"
+      description: |
+        </textarea>
+        <img src=x onerror=alert('XSS-description')>
+        <textarea>
+      responses:
+        200:
+          description: "</textarea><img src=x onerror=alert('XSS-response')>"
+
+  "/safe":
+    get:
+      parameters:
+        - name: test
+          in: query
+          required: false
+          type: string
+          description: |
+            </textarea>
+            <img src=x onerror=alert('XSS-parameter')>
+            <textarea>
+      responses:
+        200:
+          description: OK
+
+tags:
+  - name: "</textarea><img src=x onerror=alert('XSS-tag')>"
+    description: test
